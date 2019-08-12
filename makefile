@@ -1,2 +1,2 @@
-main: main.cpp
-	g++ main.cpp -lpthread -o main
+main: main.cpp httpServer.o
+	g++ main.cpp httpServer.cpp -lpthread -o main

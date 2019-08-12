@@ -1,23 +1,16 @@
-#include <iostream>
-#include <pthread.h>
-#include <unistd.h>
-#include "threadPool.h"
-#include <sys/epoll.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <cstring>
-#include <arpa/inet.h>
-#include <fcntl.h>
+#include "httpServer.h"
 
 using namespace std;
 
 #define MAXLINE 4096
 
-void httpEcho(int);
+//void httpEcho(int);
 
 int main()
 {
-	int listenfd, connfd, sockfd, epfd;
+    httpServer s(8888);
+    s.start();
+	/*int listenfd, connfd, sockfd, epfd;
 	socklen_t clilen;
 	struct sockaddr_in cliaddr, servaddr;
 	struct epoll_event ev;
@@ -39,6 +32,7 @@ int main()
 	}
 	//转监听
 	int on = 1;
+	//设置这两个可以不等timewait
 	setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR, (char *)&on, sizeof(on));
 	setsockopt(listenfd, SOL_SOCKET, SO_REUSEPORT, (char *)&on, sizeof(on));
 	listen(listenfd, 30);
@@ -50,13 +44,14 @@ int main()
 	while(true) {
 		epoll_wait(epfd, &ev, 10, -1);
 		pool.enqueue(httpEcho, accept(listenfd, (struct sockaddr*)&cliaddr, &clilen));	//直接传入参数
-	}
+	}*/
+
     return 0;
 }
 
-void httpEcho(int connfd){
+/*void httpEcho(int connfd){
 	char buff[MAXLINE];
 	read(connfd, buff, MAXLINE);
 	cout<<buff<<endl;
 	close(connfd);
-}
+}*/

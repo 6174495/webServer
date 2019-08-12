@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/heatdeath/CLionProjects/pthread/cmake-build-debug"/>
+				<Option working_dir="/home/heatdeath/develop/webServer/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/heatdeath/CLionProjects/pthread/cmake-build-debug"/>
+				<Option working_dir="/home/heatdeath/develop/webServer/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="pthread">
-				<Option output="/home/heatdeath/CLionProjects/pthread/cmake-build-debug/pthread" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/heatdeath/CLionProjects/pthread/cmake-build-debug"/>
+				<Option output="/home/heatdeath/develop/webServer/cmake-build-debug/pthread" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/heatdeath/develop/webServer/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -44,15 +44,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 pthread"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 pthread"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="pthread/fast">
-				<Option output="/home/heatdeath/CLionProjects/pthread/cmake-build-debug/pthread" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/heatdeath/CLionProjects/pthread/cmake-build-debug"/>
+				<Option output="/home/heatdeath/develop/webServer/cmake-build-debug/pthread" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/heatdeath/develop/webServer/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -67,30 +67,42 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 pthread/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 pthread/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/heatdeath/CLionProjects/pthread/cmake-build-debug"/>
+				<Option working_dir="/home/heatdeath/develop/webServer/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/heatdeath/CLionProjects/pthread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/heatdeath/develop/webServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/heatdeath/CLionProjects/pthread/main.cpp">
+		<Unit filename="/home/heatdeath/develop/webServer/httpServer.cpp">
 			<Option target="pthread"/>
 		</Unit>
-		<Unit filename="/home/heatdeath/CLionProjects/pthread/threadPool.h">
+		<Unit filename="/home/heatdeath/develop/webServer/httpServer.h">
 			<Option target="pthread"/>
 		</Unit>
-		<Unit filename="/home/heatdeath/CLionProjects/pthread/CMakeLists.txt">
+		<Unit filename="/home/heatdeath/develop/webServer/main.cpp">
+			<Option target="pthread"/>
+		</Unit>
+		<Unit filename="/home/heatdeath/develop/webServer/threadPool.h">
+			<Option target="pthread"/>
+		</Unit>
+		<Unit filename="/home/heatdeath/develop/webServer/view.cpp">
+			<Option target="pthread"/>
+		</Unit>
+		<Unit filename="/home/heatdeath/develop/webServer/view.h">
+			<Option target="pthread"/>
+		</Unit>
+		<Unit filename="/home/heatdeath/develop/webServer/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

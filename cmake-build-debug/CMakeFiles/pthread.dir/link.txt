@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/pthread.dir/main.cpp.o  -o pthread 
+/usr/bin/c++  -g   CMakeFiles/pthread.dir/main.cpp.o CMakeFiles/pthread.dir/view.cpp.o CMakeFiles/pthread.dir/httpServer.cpp.o  -o pthread 

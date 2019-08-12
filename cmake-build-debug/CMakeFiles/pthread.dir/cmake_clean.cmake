@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pthread.dir/main.cpp.o"
+  "CMakeFiles/pthread.dir/view.cpp.o"
+  "CMakeFiles/pthread.dir/httpServer.cpp.o"
   "pthread.pdb"
   "pthread"
 )

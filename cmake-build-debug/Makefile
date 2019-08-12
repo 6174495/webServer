@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/heatdeath/CLion-2019.2/clion-2019.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/heatdeath/Downloads/CLion-2019.2/clion-2019.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/heatdeath/CLion-2019.2/clion-2019.2/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/heatdeath/Downloads/CLion-2019.2/clion-2019.2/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/heatdeath/CLionProjects/pthread
+CMAKE_SOURCE_DIR = /home/heatdeath/develop/webServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/heatdeath/CLionProjects/pthread/cmake-build-debug
+CMAKE_BINARY_DIR = /home/heatdeath/develop/webServer/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/heatdeath/CLionProjects/pthread/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/heatdeath/CLion-2019.2/clion-2019.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/heatdeath/Downloads/CLion-2019.2/clion-2019.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/heatdeath/CLion-2019.2/clion-2019.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/heatdeath/Downloads/CLion-2019.2/clion-2019.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/heatdeath/CLionProjects/pthread/cmake-build-debug/CMakeFiles /home/heatdeath/CLionProjects/pthread/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/heatdeath/develop/webServer/cmake-build-debug/CMakeFiles /home/heatdeath/develop/webServer/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/heatdeath/CLionProjects/pthread/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/heatdeath/develop/webServer/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,33 @@ pthread/fast:
 	$(MAKE) -f CMakeFiles/pthread.dir/build.make CMakeFiles/pthread.dir/build
 .PHONY : pthread/fast
 
+httpServer.o: httpServer.cpp.o
+
+.PHONY : httpServer.o
+
+# target to build an object file
+httpServer.cpp.o:
+	$(MAKE) -f CMakeFiles/pthread.dir/build.make CMakeFiles/pthread.dir/httpServer.cpp.o
+.PHONY : httpServer.cpp.o
+
+httpServer.i: httpServer.cpp.i
+
+.PHONY : httpServer.i
+
+# target to preprocess a source file
+httpServer.cpp.i:
+	$(MAKE) -f CMakeFiles/pthread.dir/build.make CMakeFiles/pthread.dir/httpServer.cpp.i
+.PHONY : httpServer.cpp.i
+
+httpServer.s: httpServer.cpp.s
+
+.PHONY : httpServer.s
+
+# target to generate assembly for a file
+httpServer.cpp.s:
+	$(MAKE) -f CMakeFiles/pthread.dir/build.make CMakeFiles/pthread.dir/httpServer.cpp.s
+.PHONY : httpServer.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/pthread.dir/build.make CMakeFiles/pthread.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+view.o: view.cpp.o
+
+.PHONY : view.o
+
+# target to build an object file
+view.cpp.o:
+	$(MAKE) -f CMakeFiles/pthread.dir/build.make CMakeFiles/pthread.dir/view.cpp.o
+.PHONY : view.cpp.o
+
+view.i: view.cpp.i
+
+.PHONY : view.i
+
+# target to preprocess a source file
+view.cpp.i:
+	$(MAKE) -f CMakeFiles/pthread.dir/build.make CMakeFiles/pthread.dir/view.cpp.i
+.PHONY : view.cpp.i
+
+view.s: view.cpp.s
+
+.PHONY : view.s
+
+# target to generate assembly for a file
+view.cpp.s:
+	$(MAKE) -f CMakeFiles/pthread.dir/build.make CMakeFiles/pthread.dir/view.cpp.s
+.PHONY : view.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... pthread"
 	@echo "... edit_cache"
+	@echo "... httpServer.o"
+	@echo "... httpServer.i"
+	@echo "... httpServer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... view.o"
+	@echo "... view.i"
+	@echo "... view.s"
 .PHONY : help
 
 
