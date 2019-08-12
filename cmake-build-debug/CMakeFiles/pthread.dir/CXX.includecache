@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/heatdeath/CLionProjects/pthread/main.cpp
+iostream
+-
+pthread.h
+-
+unistd.h
+-
+threadPool.h
+/home/heatdeath/CLionProjects/pthread/threadPool.h
+
+/home/heatdeath/CLionProjects/pthread/threadPool.h
+vector
+-
+queue
+-
+memory
+-
+thread
+-
+mutex
+-
+condition_variable
+-
+future
+-
+functional
+-
+stdexcept
+-
+

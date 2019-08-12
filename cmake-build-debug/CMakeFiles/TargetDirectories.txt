@@ -1,0 +1,3 @@
+/home/heatdeath/CLionProjects/pthread/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/heatdeath/CLionProjects/pthread/cmake-build-debug/CMakeFiles/pthread.dir
+/home/heatdeath/CLionProjects/pthread/cmake-build-debug/CMakeFiles/edit_cache.dir
