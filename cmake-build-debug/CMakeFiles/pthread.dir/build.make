@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/heatdeath/Downloads/CLion-2019.2/clion-2019.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/heatdeath/CLion-2019.2/clion-2019.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/heatdeath/Downloads/CLion-2019.2/clion-2019.2/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/heatdeath/CLion-2019.2/clion-2019.2/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/heatdeath/develop/webServer
+CMAKE_SOURCE_DIR = /home/heatdeath/CLionProjects/pthread
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/heatdeath/develop/webServer/cmake-build-debug
+CMAKE_BINARY_DIR = /home/heatdeath/CLionProjects/pthread/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pthread.dir/depend.make
@@ -59,42 +59,42 @@ include CMakeFiles/pthread.dir/flags.make
 
 CMakeFiles/pthread.dir/main.cpp.o: CMakeFiles/pthread.dir/flags.make
 CMakeFiles/pthread.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heatdeath/develop/webServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pthread.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pthread.dir/main.cpp.o -c /home/heatdeath/develop/webServer/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heatdeath/CLionProjects/pthread/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pthread.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pthread.dir/main.cpp.o -c /home/heatdeath/CLionProjects/pthread/main.cpp
 
 CMakeFiles/pthread.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pthread.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/heatdeath/develop/webServer/main.cpp > CMakeFiles/pthread.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/heatdeath/CLionProjects/pthread/main.cpp > CMakeFiles/pthread.dir/main.cpp.i
 
 CMakeFiles/pthread.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pthread.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/heatdeath/develop/webServer/main.cpp -o CMakeFiles/pthread.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/heatdeath/CLionProjects/pthread/main.cpp -o CMakeFiles/pthread.dir/main.cpp.s
 
 CMakeFiles/pthread.dir/view.cpp.o: CMakeFiles/pthread.dir/flags.make
 CMakeFiles/pthread.dir/view.cpp.o: ../view.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heatdeath/develop/webServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pthread.dir/view.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pthread.dir/view.cpp.o -c /home/heatdeath/develop/webServer/view.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heatdeath/CLionProjects/pthread/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pthread.dir/view.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pthread.dir/view.cpp.o -c /home/heatdeath/CLionProjects/pthread/view.cpp
 
 CMakeFiles/pthread.dir/view.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pthread.dir/view.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/heatdeath/develop/webServer/view.cpp > CMakeFiles/pthread.dir/view.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/heatdeath/CLionProjects/pthread/view.cpp > CMakeFiles/pthread.dir/view.cpp.i
 
 CMakeFiles/pthread.dir/view.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pthread.dir/view.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/heatdeath/develop/webServer/view.cpp -o CMakeFiles/pthread.dir/view.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/heatdeath/CLionProjects/pthread/view.cpp -o CMakeFiles/pthread.dir/view.cpp.s
 
 CMakeFiles/pthread.dir/httpServer.cpp.o: CMakeFiles/pthread.dir/flags.make
 CMakeFiles/pthread.dir/httpServer.cpp.o: ../httpServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heatdeath/develop/webServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pthread.dir/httpServer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pthread.dir/httpServer.cpp.o -c /home/heatdeath/develop/webServer/httpServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heatdeath/CLionProjects/pthread/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pthread.dir/httpServer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pthread.dir/httpServer.cpp.o -c /home/heatdeath/CLionProjects/pthread/httpServer.cpp
 
 CMakeFiles/pthread.dir/httpServer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pthread.dir/httpServer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/heatdeath/develop/webServer/httpServer.cpp > CMakeFiles/pthread.dir/httpServer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/heatdeath/CLionProjects/pthread/httpServer.cpp > CMakeFiles/pthread.dir/httpServer.cpp.i
 
 CMakeFiles/pthread.dir/httpServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pthread.dir/httpServer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/heatdeath/develop/webServer/httpServer.cpp -o CMakeFiles/pthread.dir/httpServer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/heatdeath/CLionProjects/pthread/httpServer.cpp -o CMakeFiles/pthread.dir/httpServer.cpp.s
 
 # Object files for target pthread
 pthread_OBJECTS = \
@@ -110,7 +110,7 @@ pthread: CMakeFiles/pthread.dir/view.cpp.o
 pthread: CMakeFiles/pthread.dir/httpServer.cpp.o
 pthread: CMakeFiles/pthread.dir/build.make
 pthread: CMakeFiles/pthread.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/heatdeath/develop/webServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable pthread"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/heatdeath/CLionProjects/pthread/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable pthread"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pthread.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/pthread.dir/clean:
 .PHONY : CMakeFiles/pthread.dir/clean
 
 CMakeFiles/pthread.dir/depend:
-	cd /home/heatdeath/develop/webServer/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/heatdeath/develop/webServer /home/heatdeath/develop/webServer /home/heatdeath/develop/webServer/cmake-build-debug /home/heatdeath/develop/webServer/cmake-build-debug /home/heatdeath/develop/webServer/cmake-build-debug/CMakeFiles/pthread.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/heatdeath/CLionProjects/pthread/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/heatdeath/CLionProjects/pthread /home/heatdeath/CLionProjects/pthread /home/heatdeath/CLionProjects/pthread/cmake-build-debug /home/heatdeath/CLionProjects/pthread/cmake-build-debug /home/heatdeath/CLionProjects/pthread/cmake-build-debug/CMakeFiles/pthread.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pthread.dir/depend
 

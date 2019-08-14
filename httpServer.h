@@ -15,23 +15,31 @@
 #include <cstring>
 #include <arpa/inet.h>
 #include <fcntl.h>
+#include <regex>
+#include <vector>
 
 #define MAXLINE 4096
 
 class httpServer {
 public:
-    httpServer(int);
+    httpServer(std::string&, int);
+	httpServer(const char*, int);
     ~httpServer();
     int start();
+	int add(std::regex,void (*)());
+	static std::vector<void(*)()> fList;
 
 private:
-    static void httpEcho(int);
+    static void httpEcho(int);	//测试
+    static void metaChooser(int);
+	std::string path;
     int listenfd, connfd, sockfd, epfd;
     socklen_t clilen;
     struct sockaddr_in cliaddr, servaddr;
     struct epoll_event ev;
     ThreadPool *pool;
     int port;
+
 };
 
 

@@ -9,8 +9,6 @@
 class view {
     view();
     ~view();
-    template<class F, class... Args>
-    int add(const char*, F&&, Args&&...);
 };
 
 

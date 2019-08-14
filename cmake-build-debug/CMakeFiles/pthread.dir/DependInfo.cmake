@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/heatdeath/develop/webServer/httpServer.cpp" "/home/heatdeath/develop/webServer/cmake-build-debug/CMakeFiles/pthread.dir/httpServer.cpp.o"
-  "/home/heatdeath/develop/webServer/main.cpp" "/home/heatdeath/develop/webServer/cmake-build-debug/CMakeFiles/pthread.dir/main.cpp.o"
-  "/home/heatdeath/develop/webServer/view.cpp" "/home/heatdeath/develop/webServer/cmake-build-debug/CMakeFiles/pthread.dir/view.cpp.o"
+  "/home/heatdeath/CLionProjects/pthread/httpServer.cpp" "/home/heatdeath/CLionProjects/pthread/cmake-build-debug/CMakeFiles/pthread.dir/httpServer.cpp.o"
+  "/home/heatdeath/CLionProjects/pthread/main.cpp" "/home/heatdeath/CLionProjects/pthread/cmake-build-debug/CMakeFiles/pthread.dir/main.cpp.o"
+  "/home/heatdeath/CLionProjects/pthread/view.cpp" "/home/heatdeath/CLionProjects/pthread/cmake-build-debug/CMakeFiles/pthread.dir/view.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

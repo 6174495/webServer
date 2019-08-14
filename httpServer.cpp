@@ -6,10 +6,19 @@
 
 using namespace std;
 
-httpServer::httpServer(int port) {
+httpServer::httpServer(string& p, int port) {
     //创建线程池
     pool = new ThreadPool(4);
     this->port = port;
+    this->path = p;
+}
+
+httpServer::httpServer(const char* p, int port) {
+	//创建线程池
+	pool = new ThreadPool(4);
+	this->port = port;
+	this->path = p;
+
 }
 
 httpServer::~httpServer() {
@@ -45,9 +54,27 @@ int httpServer::start() {
     listen(listenfd, 30);
     while(true) {
         epoll_wait(epfd, &ev, 10, -1);
-        pool->enqueue(httpEcho, accept(listenfd, (struct sockaddr*)&cliaddr, &clilen));	//直接传入参数
+        pool->enqueue(metaChooser, accept(listenfd, (struct sockaddr*)&cliaddr, &clilen));	//直接传入参数
     }
     return 0;
+}
+
+void httpServer::metaChooser(int connfd) {
+	char buff[MAXLINE];
+	int r;
+	if((r = read(connfd, buff, MAXLINE)) < 0){
+		cout<<"request failed"<<endl;
+	}
+	string requestHead(buff);
+	cout<<requestHead<<endl;
+	/*if(!fList.empty()){
+		fList[0]();
+	}*/
+}
+
+int httpServer::add(std::regex e, void (*pf)()){
+	fList.push_back(pf);
+	return 0;
 }
 
 void httpServer::httpEcho(int connfd){

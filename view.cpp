@@ -11,8 +11,3 @@ view::view(){
 view::~view() {
 
 }
-
-template<class F, class... Args>
-int view::add(const char *, F &&, Args &&...) {
-
-}
